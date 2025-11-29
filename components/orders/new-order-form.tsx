@@ -310,7 +310,6 @@ export function NewOrderForm({ onSuccess, onCancel }: NewOrderFormProps) {
                   value={product.name}
                   onChange={(e) => updateProduct(index, 'name', e.target.value)}
                   placeholder="Ürün adı"
-                  size="sm"
                 />
               </div>
               <div className="col-span-2">
@@ -319,7 +318,6 @@ export function NewOrderForm({ onSuccess, onCancel }: NewOrderFormProps) {
                   value={product.sku}
                   onChange={(e) => updateProduct(index, 'sku', e.target.value)}
                   placeholder="SKU"
-                  size="sm"
                 />
               </div>
               <div className="col-span-2">
@@ -334,7 +332,6 @@ export function NewOrderForm({ onSuccess, onCancel }: NewOrderFormProps) {
                   value={product.price}
                   onChange={(e) => updateProduct(index, 'price', parseFloat(e.target.value) || 0)}
                   placeholder="0.00"
-                  size="sm"
                 />
               </div>
               <div className="col-span-2">
@@ -347,7 +344,6 @@ export function NewOrderForm({ onSuccess, onCancel }: NewOrderFormProps) {
                   min="1"
                   value={product.quantity}
                   onChange={(e) => updateProduct(index, 'quantity', parseInt(e.target.value) || 1)}
-                  size="sm"
                 />
               </div>
               <div className="col-span-2 flex items-center gap-2">
